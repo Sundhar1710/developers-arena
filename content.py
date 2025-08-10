@@ -7,7 +7,7 @@ def add_contact():
     if not name or not phone:
         print("Name and phone number are required!")
         return
-
+    
     with open(CONTACTS_FILE, "a") as file:
         file.write(f"{name},{phone},{email}\n")
     print("Contact added successfully!\n")
@@ -42,7 +42,7 @@ def search_contacts():
 
 def main():
     while True:
-        print("--- Contact Book ---")
+        print("---- Contact Book ----")
         print("1. Add Contact")
         print("2. View Contacts")
         print("3. Search Contact")
