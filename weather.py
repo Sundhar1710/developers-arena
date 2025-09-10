@@ -13,9 +13,9 @@ def getweather(city):
         print(f"📍Location: {l}\n🌡 Temperature: {(temp - 273.5):.2f}\u00b0C\n💁 Condition: {c}")
         print('--------------------------\n')
     except:
-        print('--------------------------\n')
+        print('---------------------------\n')
         print(f'Error: Unable to fetch data for {city}. please check the city name \n')
-        print('--------------------------\n')
+        print('---------------------------\n')
 
 
 if __name__ == '__main__':
